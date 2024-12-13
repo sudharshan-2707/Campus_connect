@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title> CAMPUS_CONNECT</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-right:40px ;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: rgb(232, 223, 223);
+	padding: 5px 20px;
+	border: 1p
+    x solid transparent;
+	transition: 0.5s ease;
+
+}
+
+ul li a:hover{
+	background-color: rgba(156, 156, 159, 0.416);
+	color: #000;
+}
+
+ul li.active a{
+background-color:gray;
+	color: #000;
+
+}
+header{
+  align-items: center;
+  height:100vh;
+  width:100%;
+  background-image: url('/static/col.jpg');
+  background-size:cover;
+  background-position:center;
+}
+.logo img{
+	float: left;
+	width: 40px;
+	height: auto;
+	border-radius: 5px;
+	margin-top: 17px;
+}
+
+.main{
+	max-width: 1900px;
+	margin: auto;
+}
+.summa{
+	font-size: 25px;
+	color:aliceblue;
+	padding-top: 24px ;
+	padding-left: 43px;
+	font-family: "Permanent Marker", cursive;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.event-card {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 40px;
+	overflow: hidden;
+	width: 300px;
+}
+.event-card img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+}
+.event-card h2 {
+	color: #333;
+	font-size: 20px;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+.event-card p {
+	color: #666;
+	font-size: 14px;
+	margin: 5px 0;
+	padding: 0 10px;
+}
+.event-card a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 10px;
+}
+.event-card a:hover {
+	background-color: #f0f0f0;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="main">
+		<div class="logo">
+			<img src="/static/logc.jpg">
+		</div>
+    
+    
+    </div>
+    <h1 div class="summa">AMPUS CONNECT</h1>
+
+<div class="container">
+    <div class="event-card">
+        <a href="{% url 'eventd' %}">
+            <img src="/static/col.jpg" alt="Event 1">
+            <h2>Event Title 1</h2>
+            <p>Date: March 10, 2024</p>
+            <p>Time: 2:00 PM</p>
+            <p>Location: College Auditorium</p>
+            <p>Description: Hackathons are not only about coding but also about creativity, teamwork, and problem-solving skills. Participants often brainstorm ideas, develop prototypes, and present their projects to a panel of judges or peers at the end of the event. </p>
+        </a>
+    </div>
+    <div class="event-card">
+        <a href="{% url 'eventd' %	}">
+            <img src="/static/col.jpg" alt="Event 2">
+            <h2>Event Title 2</h2>
+            <p>Date: March 15, 2024</p>
+            <p>Time: 3:30 PM</p>
+            <p>Location: College Grounds</p>
+            <p>Description:A Tic Tac Toe event is a friendly competition where participants engage in playing the classic game of Tic Tac Toe. Tic Tac Toe, also known as Noughts and Crosses, is a two-player game played on a 3x3 grid. </p>
+        </a>
+    </div>
+    <!-- More event cards can be added here -->
+</div>
+</header>
+</body>
+</html>

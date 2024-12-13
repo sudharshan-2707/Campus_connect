@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerusalem College - Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/static/images/col.jpg'); /* Add your background image path here */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px; /* Adjust as needed */
+            margin-bottom: 30px;
+        }
+        .course {
+            background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .course h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .course p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .logo img{
+            float: left;
+            width: 40px;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 17px;
+        }
+        
+        main {
+            padding: 30px 20px; /* Adjusted padding */
+            background-color: rgba(255, 255, 255, 0.696);
+             /* Added background color with low opacity */
+            text-align: center; /* Center align content */
+            position: relative; /* Added position relative to the main */
+        }
+        ul {
+            float: right;
+            list-style-type: none;
+            margin-top: 30px;
+            margin-right: 40px;
+        }
+        ul li {
+            display: inline-block;
+        }
+        ul li a {
+            text-decoration: none;
+            color: rgb(232, 223, 223);
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+        ul li a:hover {
+            background-color: rgba(156, 156, 159, 0.416);
+            color: #000;
+        }
+        ul li.active a {
+            background-color: gray;
+            color: #000;
+        }
+        .summa{
+            font-size: 25px;
+            color: aliceblue;
+            padding-top: 24px;
+            padding-left: 43px;
+            font-family: "Permanent Marker", cursive;
+        }
+    </style>
+</head>
+<body>
+  
+        <div class="logo">
+            <img src="/static/logc.jpg">
+        </div>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="active"><a href="{% url 'course' %}">Courses</a></li>
+            <li><a href="{% url 'dis' %}">Events</a></li>
+            <li><a href="{% url 'pla' %}">Placements</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'fac' %}">Facilities</a></li>        
+        </ul>
+    </div>
+    <h1 class="summa">AMPUS CONNECT</h1> <!-- Corrected typo -->
+  
+
+<div class="container">
+    <h1>Jerusalem College - Courses</h1>
+    
+    <div class="course">
+        <h2>Computer Science Engineering</h2>
+        <p>Computer Science Engineering at Jerusalem College provides students with a comprehensive understanding of computer systems, software development, algorithms, and data structures. Through hands-on projects and internships, students gain practical experience in areas such as artificial intelligence, machine learning, cybersecurity, and software engineering.</p>
+    </div>
+    <div class="course">
+        <h2>Electronics and Communication Engineering</h2>
+        <p>Electronics and Communication Engineering program equips students with the knowledge and skills to design, develop, and troubleshoot electronic devices, circuits, and communication systems. The curriculum covers topics such as analog and digital electronics, signal processing, embedded systems, and wireless communication, preparing students for careers in telecommunications, semiconductor industry, and more.</p>
+    </div>
+    
+    <div class="course">
+        <h2>Mechanical Engineering</h2>
+        <p>Mechanical Engineering at Jerusalem College focuses on principles of mechanics, thermodynamics, and materials science to design and manufacture mechanical systems and components. Students learn to analyze and optimize mechanical systems, explore renewable energy technologies, and develop innovative solutions to real-world engineering challenges.</p>
+    </div>
+
+    <div class="course">
+        <h2>Civil Engineering</h2>
+        <p>Civil Engineering involves the design, construction, and maintenance of infrastructure projects such as buildings, roads, bridges, and dams. Students learn about structural engineering, geotechnical engineering, transportation engineering, and environmental engineering, preparing them for roles in construction companies, government agencies, and consulting firms.</p>
+    </div>
+
+    <div class="course">
+        <h2>Electrical Engineering</h2>
+        <p>Electrical Engineering focuses on the study of electricity, electromagnetism, and electronics. Students learn about power generation, transmission, and distribution, as well as the design of electrical circuits, motors, and control systems. Graduates of this program pursue careers in power plants, manufacturing industries, and telecommunications.</p>
+    </div>
+
+    <div class="course">
+        <h2>Chemical Engineering</h2>
+        <p>Chemical Engineering deals with the design, operation, and optimization of chemical processes used in industries such as petroleum, pharmaceuticals, and food processing. Students study subjects like thermodynamics, fluid mechanics, and process control, and gain practical experience through internships and industrial training.</p>
+    </div>
+
+    <div class="course">
+        <h2>Aerospace Engineering</h2>
+        <p>Aerospace Engineering focuses on the design, development, and testing of aircraft and spacecraft. Students learn about aerodynamics, propulsion, flight mechanics, and materials science, and gain practical experience through projects and internships with aerospace companies and research institutions.</p>
+    </div>
+
+    <div class="course">
+        <h2>Biomedical Engineering</h2>
+        <p>Biomedical Engineering combines principles of engineering and biology to develop technologies and devices for healthcare applications. Students study topics such as medical imaging, biomaterials, biomechanics, and rehabilitation engineering, and have opportunities for research and internships in hospitals and biomedical companies.</p>
+    </div>
+
+    <div class="course">
+        <h2>Environmental Engineering</h2>
+        <p>Environmental Engineering focuses on the protection and improvement of environmental quality. Students learn about water and wastewater treatment, air pollution control, solid waste management, and environmental impact assessment, and apply their knowledge to address pressing environmental challenges.</p>
+    </div>
+
+    <div class="course">
+        <h2>Information Technology</h2>
+        <p>Information Technology program provides students with skills in software development, database management, networking, and cybersecurity. Students learn programming languages, web development frameworks, and IT infrastructure management, preparing them for roles in IT companies, banks, and consulting firms.</p>
+    </div>
+    
+</div>
+
+</body>
+</html>

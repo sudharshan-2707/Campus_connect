@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        ul {
+            float: right;
+            list-style-type: none;
+            margin-top: 30px;
+            margin-right: 40px;
+        }
+        ul li {
+            display: inline-block;
+        }
+        ul li a {
+            text-decoration: none;
+            color: rgb(232, 223, 223);
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+        ul li a:hover {
+            background-color: rgba(156, 156, 159, 0.416);
+            color: #000;
+        }
+        ul li.active a {
+            background-color: gray;
+            color: #000;
+        }
+        .main {
+            max-width: 1900px;
+            margin: auto;
+        }
+        .summa {
+            font-size: 25px;
+            color: aliceblue;
+            padding-top: 24px;
+            padding-left: 43px;
+            font-family: "Permanent Marker", cursive;
+        }
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-image: url("/static/col.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .logo img{
+            float: left;
+            width: 40px;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 17px;
+        }
+        
+        main {
+            padding: 30px 20px; /* Adjusted padding */
+            background-color: rgba(255, 255, 255, 0.696);
+             /* Added background color with low opacity */
+            text-align: center; /* Center align content */
+            position: relative; /* Added position relative to the main */
+        }
+        
+            
+        
+        section {
+            margin-bottom: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .centered-image {
+            margin-bottom: 20px; /* Add margin for spacing */
+            width: 800px;
+            padding-left: 380px;
+            padding-bottom: 80px;
+            padding-top: 30px;
+        }
+        .centered-imageL {
+            margin-bottom: 20px; /* Add margin for spacing */
+            width: 100px;
+            padding-left: 380px;
+            padding-bottom: 80px;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="/static/logc.jpg">
+        </div>
+        <ul>
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-home"></i>Home
+                </a>
+            </li>
+            <li><a href="{% url 'course' %}">Courses</a></li>
+            <li><a href="{% url 'dis' %}">Events</a></li>
+            <li><a href="{% url 'pla' %}">Placements</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'fac' %}">Facilities</a></li>        
+        </ul>
+    </div>
+    <h1 class="summa">AMPUS CONNECT</h1>
+</body>
+</html>
