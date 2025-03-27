@@ -10,7 +10,10 @@ def send_mail_func(self,email):
         
         to_email=email
         
-        message="venue : JERUSALEM COLLEGE OF ENGINEEERING " 
+        message="College : JERUSALEM COLLEGE OF ENGINEEERING " \
+        "    Venue : LH44" \
+        "    Time : 4 pm" \
+        "    date: 30-03-2025" 
         send_mail(
         subject = mail_subject,
         message=message,

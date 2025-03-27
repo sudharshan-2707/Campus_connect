@@ -6,7 +6,6 @@ import os
 
 class Register(models.Model):
     user_name = models.CharField(max_length=50,null=True)
-    first_name = models.CharField(max_length = 20,null=True)
     email = models.EmailField(max_length = 30)
     phone = models.CharField(max_length=50)
     
